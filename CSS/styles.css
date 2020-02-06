@@ -103,4 +103,9 @@ p {
 
 .footer-icon {
   margin: 20px 10px;
+  color: #9dab86;
+}
+
+.footer-icon:hover {
+  color: #758063;
 }
