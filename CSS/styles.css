@@ -1,12 +1,11 @@
-#title {
-  height: 850px;
-  background-image: url("../Images/mountain-farm.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+body {
+  font-family: 'Playfair Display SC', serif;
 }
 
-body {
-font-family: 'Playfair Display SC', serif;
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
 }
 
 h3 {
@@ -17,15 +16,10 @@ p {
   font-family: 'Montserrat', sans-serif;
 }
 
-.container-fluid {
-  padding: 0 0;
-  text-align: center;
-}
-
 /* Navbar */
 .navbar {
   padding: 1.5rem 1.5rem;
-
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .navbar-brand {
@@ -41,22 +35,30 @@ p {
 }
 
 .nav-link {
-    font-size: 1.2rem;
-    font-family: 'Montserrat', sans-serif;
-    color: #fff;
-  }
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+}
 
 /* Title */
+#title {
+  height: 850px;
+  background-image: url("../Images/mountain-farm.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 100%;
+}
 
+.container-fluid {
+  padding: 0 0;
+  text-align: center;
+}
 
 .heading {
-  position: absolute;
   text-align: left;
   margin: 325px 0 0 15px;
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #fff;
-
 }
 
 /* Features */
@@ -94,10 +96,11 @@ p {
 .btn {
   font-family: 'Montserrat', sans-serif;
 }
+
 /* Footer Section */
 #footer {
   text-align: center;
-  padding:75px 25px;
+  padding: 75px 25px;
   background-color: #fff;
 }
 
@@ -108,4 +111,66 @@ p {
 
 .footer-icon:hover {
   color: #758063;
+}
+
+@media (min-width: 1300px) {
+  #title {
+    height: 850px;
+  }
+
+  #features {
+    padding-top: 100px;
+  }
+}
+
+@media (max-width: 1299px) and (min-width: 992px) {
+  #title {
+    height: 700px;
+  }
+}
+
+#features {
+  padding-top: 75px;
+}
+
+@media (max-width: 991px) and (min-width: 800px) {
+  #title {
+    height: 550px;
+  }
+
+  #features {
+    padding-top: 75px;
+  }
+}
+
+@media (max-width: 799px) and (min-width: 631px) {
+  #title {
+    height: 450px;
+  }
+
+  #features {
+    padding-top: 75px;
+  }
+
+  .heading {
+    margin: 200px 0 0 15px;
+  }
+}
+
+@media (max-width: 630px) {
+  #title {
+    height: 400px;
+  }
+
+  #features {
+    padding-top: 50px;
+  }
+
+  h1 {
+      font-size: 2rem;
+  }
+
+  .heading {
+    margin: 100px 0 0 15px;
+  }
 }
